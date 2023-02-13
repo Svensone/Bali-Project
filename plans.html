@@ -1,0 +1,551 @@
+
+<!-- 
+    Notes:
+
+https://redstapler.co/add-3d-model-to-website-threejs/ 
+
+-->
+
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="Bali Website" content="">
+    <meta name="author" content="">
+    <link rel="icon" href="../../../../favicon.ico">
+
+    <title>Bali Surfcamp</title>
+    <!-- Bootstrap -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"/>
+    <!-- Fonts -->
+    <script src="https://use.fontawesome.com/releases/v5.0.8/js/all.js"></script>
+    <script src="src/scripts/model3d.js"></script>
+    </script>
+    <!-- Stylesheet -->
+    <link href="style.css" rel="stylesheet" />
+</head>
+
+<body>
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-md navbar-light bg-light sticky-top">
+    <div class="container-fluid">
+        <a href="#" class="navbar-brand">
+        <img src="img/019-van.png" alt="" height="50px" /> </a>
+        <button
+            class="navbar-toggler"
+            type="button"
+            data-toggle="collapse"
+            data-target="#navbarResponsive">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarResponsive">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item active">
+                    <a href="./index.html" class="nav-link">home</a>
+                </li>
+                <li class="nav-item">
+                    <a href="./plans.html" class="nav-link">plans</a>
+                </li>
+                <li class="nav-item">
+                    <a href="./progress.html" class="nav-link">progress</a>
+                </li>
+                
+                <li class="nav-item">
+                    <a href="./vision.html" class="nav-link">vision</a>
+                </li>
+                <!-- <li class="nav-item">
+                    <a href="./SignIn.html" class="nav-link">Sign In</a>
+                </li> -->
+            </ul>
+        </div>
+        </a>
+      </div>
+    </nav>
+
+    <main role="main">
+
+<!-- Header -->
+<div  class="container-fluid padding">
+    <div class="row welcome text-center">
+        <div class="col-12">
+            <br id="site">
+            <br>
+            <br>
+            <br>
+            <h1 class="display-4"> Site Plans </h1>
+        </div>
+        <hr>
+        <div class="col-12">
+            <p>located on Bali's beautiful Westcoast</p>
+            <p class="lead"><button type="button" class="btn btn-primary btn-lg"> <a href="https://goo.gl/maps/1vNMZHnoM1FEoXsz9" 
+                target="_blank"> see the location</a></button>
+            </p>
+            <br>
+            <p> Use Desktop PC for best viewing experience</p>
+        </div>
+    </div>
+</div>
+<!-- Site Layout & Surroundings -->
+<div class="container-fluid padding projects">
+    <div class="row padding">
+        <div class="col-lg-4" id="project1">
+            <h4> Site Layout </h4>
+            <hr>
+            <p>directly at the beach, with still some rice-paddies around</p>
+        </div>
+        <div class="col-lg-8">
+            <!-- pdf -->
+            <!-- #toolbar=0 for clean look behind .pdf-->
+            <div >
+                <div class="img-fluid">
+                    <object
+                    data='src/pdf layouts/All_Surroundings.pdf'
+                    
+                    type="application/pdf"
+                    width=100%
+                    height="400"
+                    >
+                    <iframe
+                        src='src/pdf layouts/All_Surroundings.pdf'                    
+                    width=100%
+                    >
+                    <p>This browser does not support PDF!</p>
+                    </iframe>
+                    </object>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- Site Layout -All Floors -->
+<div class="container-fluid padding projects">
+    <div class="row padding">
+        <div class="col-lg-4" id="project1">
+            <h4> All Floors Plans </h4>
+            <hr>
+            <ul> 2023
+            <li>Restaurant/Pool and Melati House</li>
+            <li>afterwards re-position the 2x Balinese Wood Bungalows & add new bathroom</li>
+            </ul>
+            <ul>2024
+                <li>Skate-bowl</li>
+                <li>Beach-front</li>
+            </ul>
+        </div>
+        <div class="col-lg-8">
+            <!-- pdf -->
+            <div >
+                <div class="img-fluid">
+                    <object
+                    data='src/pdf layouts/All_AllFloors.pdf'
+                    type="application/pdf"
+                    width=100%
+                    height="400"
+                    >
+                    <iframe
+                        src='src/pdf layouts/All_AllFloors.pdf'                    
+                    width=100%
+                    >
+                    <p>This browser does not support PDF!</p>
+                    </iframe>
+                    </object>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- 3D Model -->
+<!-- <div class="container-fluid padding projects">
+    <div class="row padding">
+        <div class="col-lg-4" id="project1">
+            <h4> 3D Model </h4>
+            <hr>
+            <p> sorry but our coding skills got a bit rusty 
+                so the clean integration is taking a bit more time 🤣</p>
+        </div>
+        <div class="col-lg-8">
+            <model-3d 
+            background-color="#ffffff" 
+            src="src/3dObjects/All_20221223_Version 2.7_FloorHeightClean2,7m-2,9untilReinforcedConcrete.glb">
+            </model-3d>
+        </div>
+    </div>
+</div> -->
+
+<!-- Melati House -->
+    <div  class="container-fluid padding">
+        <div class="row welcome text-center">
+            <div  class="col-12">
+                <br id="melati">
+                <br>
+                <br>
+                <br>
+                <h1 class="display-4"> The Melati House </h1>
+                <h4 class="jumbotron-heading"> "Jasmin" in Indonesian</h3>
+            </div>
+            <hr>
+            <div class="col-12">
+                <p class="lead">
+                    clean, minimalistic & modern living
+                </p>
+                <hr>
+                <p>Status: "Building"</p>
+                <p>but like all relaxed-balinese we will adjust on the fly the plans while buidling  </p>
+                <p> ... we call it "Agile Development in Construction" 🤣</p>
+            </div>
+        </div>
+    </div>
+    <!-- Ground Floor & Inspiration Melati -->
+<div class="container-fluid padding projects">
+        <div class="row padding">
+            <div class="col-lg-4" id="project1">
+                <h4> Melati House </h4>
+                <hr>
+            <p>Building in progress 
+                <br>  Layouts are/will be adjusted with input by local construction know-how as we go
+            because following a plan exactly would be to easy. </p>
+            </div>
+            <div class="col-lg-8">
+                <!-- pdf -->
+                <div >
+                    <div class="img-fluid">
+                        <object
+                        data='src/pdf layouts/Melati-GroundFloor.pdf'
+                        type="application/pdf"
+                        width=100%
+                        height="400"
+                        >
+                        <iframe
+                            src='src/pdf layouts/Melati-GroundFloor.pdf'                    
+                        width=100%
+                        >
+                        <p>This browser does not support PDF!</p>
+                        </iframe>
+                        </object>
+                    </div>
+                </div>
+            </div>
+        </div>
+</div>
+    <!-- All Ground Floors -->
+<div class="container-fluid padding projects">
+    <div class="row padding">
+        <div class="col-lg-4" id="project1">
+            <h4> All Floor Plans </h4>
+            <hr>
+        </div>
+        <div class="col-lg-8">
+            <div >
+                <div class="img-fluid">
+                    <object
+                    data='src/pdf layouts/Melati-Floors.pdf'
+                    type="application/pdf"
+                    width=100%
+                    height="400"
+                    >
+                    <iframe
+                        src='src/pdf layouts/Melati-Floors.pdf'                    
+                    width=100%
+                    >
+                    <p>This browser does not support PDF!</p>
+                    </iframe>
+                    </object>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- Elevation / Side View -->
+<div class="container-fluid padding projects">
+    <div class="row padding">
+        <div class="col-lg-4" id="project1">
+            <h4> Elevation / Side View </h4>
+            <hr>
+            <p>Rendering not yet done - so just take the pics and use your imagination.</p>
+        </div>
+        <div class="col-lg-8">
+            <div >
+                <div class="img-fluid">
+                    <object
+                    data='src/pdf layouts/Melati-Elevations.pdf'
+                    type="application/pdf"
+                    width=100%
+                    height="400"
+                    >
+                    <iframe
+                        src='src/pdf layouts/Melati-Elevations.pdf'                    
+                    width=100%
+                    >
+                    <p>This browser does not support PDF!</p>
+                    </iframe>
+                    </object>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- Elevation / Side View -->
+<div class="container-fluid padding projects">
+    <div class="row padding">
+        <div class="col-lg-4" id="project1">
+            <h4> Section</h4>
+            <hr>
+            <p>Honestly, this is confusing and we have no clue how to make an intuitivly understandable cross-section plan 🤣</p>
+            <p>just see the pictures on the progress page and it'll make sense.</p>
+        </div>
+        <div class="col-lg-8">
+            <div >
+                <div class="img-fluid">
+                    <object
+                    data='src/pdf layouts/Melati-Section.pdf'
+                    type="application/pdf"
+                    width=100%
+                    height="400"
+                    >
+                    <iframe
+                        src='src/pdf layouts/Melati-Section.pdf'                    
+                    width=100%
+                    >
+                    <p>This browser does not support PDF!</p>
+                    </iframe>
+                    </object>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- 3D Model -->
+<!-- <div class="container-fluid padding projects">
+    <div class="row padding">
+        <div class="col-lg-4" id="project1">
+            <h4> 3d Model </h4>
+            <hr>
+            <p> user-friendly version is in the making . 
+               <br> Sorry for waiting but the surf is pretty good at the moment 🤣</p>
+        </div>
+        <div class="col-lg-8">
+            <div >
+                <div class="img-fluid">
+                <model-3d background-color="#ffffff" src="src/3dObjects/test.glb"></model-3d>
+                </div>
+            </div>
+        </div>
+    </div>
+</div> -->
+
+
+
+
+<!-- Resto & Roof-top Pool Detail -->
+<div  class="container-fluid padding">
+    <div class="row welcome text-center">
+        <div class="col-12">
+            <br id="resto">
+                <br>
+                <br>
+                <br>
+            <h1 class="display-4"> The Heart of the Surfcamp </h1>
+        </div>
+        <hr>
+        <div class="col-12">
+            <p>Community - Communication - Fun</p>
+            </p>
+            <hr>
+                <p>Status: "Concept / Planning"</p>            
+        </div>
+    </div>
+</div>
+
+<!-- Ground Floor & Inspiration Resto -->
+<div class="container-fluid padding projects">
+    <div class="row padding">
+        <div class="col-lg-4" id="project1">
+            <h2> Ground Floor </h2>
+            <hr>
+            <p> details for kitchen, foundation or interior will come soon
+                <br>Style for Groundfloor see pics on the right. Bamboo divider 
+                and general style like photos </p>
+            <p></p>
+        </div>
+        <div class="col-lg-8">
+            <div >
+                <div class="img-fluid">
+                    <object
+                    data='src/pdf layouts/Resto_GroundFloor.pdf'
+                    type="application/pdf"
+                    width=100%
+                    height="400"
+                    >
+                    <iframe
+                        src='src/pdf layouts/Resto_GroundFloor.pdf'                    
+                    width=100%
+                    >
+                    <p>This browser does not support PDF!</p>
+                    </iframe>
+                    </object>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- First Floor & Inspiration Resto -->
+<div class="container-fluid padding projects">
+    <div class="row padding">
+        <div class="col-lg-4" id="project1">
+            <h2> 1.st Floor </h2>
+            <hr>
+            <ul>
+                <li>pool elevated from ground (like photo on right) or level with floor open not yet decided</li>
+                <li> pool with dark tiles or bright ? send us your opinion !!!</li>
+            </ul>
+            
+        </div>
+        <div class="col-lg-8">
+            <div >
+                <div class="img-fluid">
+                    <object
+                    data='src/pdf layouts/Resto_FirstFloor.pdf'
+                    type="application/pdf"
+                    width=100%
+                    height="400"
+                    >
+                    <iframe
+                        src='src/pdf layouts/Resto_FirstFloor.pdf'                    
+                    width=100%
+                    >
+                    <p>This browser does not support PDF!</p>
+                    </iframe>
+                    </object>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- All Floors -->
+<div class="container-fluid padding projects">
+    <div class="row padding">
+        <div class="col-lg-4" id="project1">
+            <h2> All Floors </h2>
+            <hr>
+            <p> </p>
+        </div>
+        <div class="col-lg-8">
+            <div >
+                <div class="img-fluid">
+                    <object
+                    data='src/pdf layouts/Resto_AllFloors.pdf'
+                    type="application/pdf"
+                    width=100%
+                    height="400"
+                    >
+                    <iframe
+                        src='src/pdf layouts/Resto_AllFloors.pdf'                    
+                    width=100%
+                    >
+                    <p>This browser does not support PDF!</p>
+                    </iframe>
+                    </object>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- Elevations -->
+<div class="container-fluid padding projects">
+    <div class="row padding">
+        <div class="col-lg-4" id="project1">
+            <h2> Elevations </h2>
+            <hr>
+        </div>
+        <div class="col-lg-8">
+            <div >
+                <div class="img-fluid">
+                    <object
+                    data='src/pdf layouts/Resto_Elevations.pdf'
+                    type="application/pdf"
+                    width=100%
+                    height="400"
+                    >
+                    <iframe
+                        src='src/pdf layouts/Resto_Elevations.pdf'                    
+                    width=100%
+                    >
+                    <p>This browser does not support PDF!</p>
+                    </iframe>
+                    </object>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- 3D Model -->
+<!-- <div class="container-fluid padding projects">
+    <div class="row padding">
+        <div class="col-lg-4" id="project1">
+            <h2> 3D-Model </h2>
+            <hr>
+            <p> Not yet done: Colors, Objects, Interior and Rendering</p>
+        </div>
+        <div class="col-lg-8">
+            <div >
+                <div class="img-fluid">
+                <model-3d background-color="#ffffff" src="src/3dObjects/resto.glb"></model-3d>
+
+                </div>
+            </div>
+        </div>
+    </div>
+</div> -->
+
+    </main>
+
+    <!-- Divider  -->
+    <hr class="my-4">
+<!-- ------------------- Help us / get involed  -------------------  -->
+<div class="container-fluid">
+    <div class="row jumbotron">
+        <div class="col-xs-12 col-sm-12 col-md-9 col-lg-9 col-xl-10">
+            <p class="lead"> Join in ! 
+                <br> We are happy for any help, prayers, ideas, tipps & feedback!</p>
+        </div>
+            <div class="col-xs-12 col-sm-12 col-md-3 col-lg-3 col-xl-2">
+            <a href="https://api.whatsapp.com/send?phone=491633846440" target="_blank">
+                    <button type="button" class="btn btn-outline-secondary btn-lg">
+                    Connect on WhatsApp </button>                     
+            </div>
+        </a>
+    </div>
+</div>
+
+<!-- ---------------------- Footer ------------------------>
+<footer>
+<div class="container-fluid padding footer">
+    <div class="row text-center">
+        <div class="col-md-12">
+            <div class="logo">
+                    <img src="img/019-van.png" alt="" height="50px" >
+            </div>
+            <hr class="light">
+            <p> Agus & Sven </p>
+            <p> Bali</p>
+        </div>
+        </div>
+    </div>
+</div>
+</footer>
+
+    <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script>window.jQuery || document.write('<script src="../../assets/js/vendor/jquery-slim.min.js"><\/script>')</script>
+    <script src="../../assets/js/vendor/popper.min.js"></script>
+    <script src="../../dist/js/bootstrap.min.js"></script>
+    <script src="../../assets/js/vendor/holder.min.js"></script>
+  </body>
+</html>

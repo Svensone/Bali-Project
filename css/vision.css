@@ -1,0 +1,25 @@
+/* ----------- vision.html
+-------------------------------------------------- */
+
+  #showcase {
+    margin-top: 5%;
+  }
+  
+  #showcase img{
+    width:95%;
+    margin-left:0px;
+  }
+  
+  #showcase .showcase-right {
+
+    justify-items: center;
+   }
+
+
+  .container-showcase{
+    min-height: 50vh;
+  }
+  
+  h1 {
+    font-size: 150%;
+  }
