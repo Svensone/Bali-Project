@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <title>Bali Surfcamp</title>
+
+    <!-- Bootstrap -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"/>
+
+    <!-- Fonts -->
+    <script src="https://use.fontawesome.com/releases/v5.0.8/js/all.js"></script>
+    
+<!-- JS file to enable the JavaScript API. You can point at the
+version on public.tableau.com, online.tableau.com, or your on-prem Server -->
+    <script src="https://www.example.com/javascripts/api/tableau-2.js"></script>
+
+    <!-- Stylesheet -->
+    <link href="style.css" rel="stylesheet" />
+    <link rel="stylesheet" href="css/vision.css">
+  </head>
+
+  <body>
+
+
+    <!--   😉🤣 ❤️✌️🌊-->
+
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-md navbar-light bg-light sticky-top">
+        <div class="container-fluid">
+            <a href="#" class="navbar-brand">
+            <img src="img/019-van.png" alt="" height="50px" /> </a>
+            <button
+                class="navbar-toggler"
+                type="button"
+                data-toggle="collapse"
+                data-target="#navbarResponsive">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarResponsive">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item active">
+                        <a href="./index.html" class="nav-link">home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="./plans.html" class="nav-link">plans</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="./progress.html" class="nav-link">progress</a>
+                    </li>
+                    
+                    <li class="nav-item">
+                        <a href="./vision.html" class="nav-link">vision</a>
+                    </li>
+                    <!-- <li class="nav-item">
+                        <a href="./SignIn.html" class="nav-link">Sign In</a>
+                    </li> -->
+                </ul>
+            </div>
+            </a>
+          </div>
+        </nav>
+
+    <!-- - Header Bali Surfcamp Section -->
+    <div id="animations" class="container-fluid padding">
+        <div class="row welcome text-center">
+            <div class="col-12">
+                <h1 class="display-4"> the bali-project </h1>
+                <br>
+                <p> what you get when you have a Data Analyst / Scientist on the team</p>
+            </div>
+            <hr>
+            <div class="col-12">
+                <p class="lead">
+                </p>
+            </div>
+        </div>
+    </div>
+
+    <script type="module" src="https://public.tableau.com/javascripts/api/tableau.embedding.3.latest.min.js"></script>
+
+<!-- 
+Initialize the API as part of your HTML code by using the <tableau-viz> web component. 
+After linking to the API library, the following code is all you need to embed a Tableau view into your HTML pages.
+-->
+
+
+<!-- Other Option to embed Dashboards -->
+<!-- Embbed Link from Public Tableau  -->
+<!-- <div class="container-fluid padding">
+    
+    <div class='tableauPlaceholder' 
+    id='viz1676424007083' 
+    style='position: relative'>
+    <noscript><a href='#'><img alt='Materials ' 
+    src='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;Ba&#47;BaliProjectDashboard1_1&#47;Materials&#47;1_rss.png' 
+    style='border: none' /></a></noscript>
+    <object class='tableauViz'  style='display:none;'>
+        <param name='host_url' value='https%3A%2F%2Fpublic.tableau.com%2F' /> 
+        <param name='embed_code_version' value='3' />
+     <param name='site_root' value='' /><param name='name' value='BaliProjectDashboard1_1&#47;Materials' />
+     <param name='tabs' value='no' /><param name='toolbar' value='yes' /><param name='static_image' 
+     value='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;Ba&#47;BaliProjectDashboard1_1&#47;Materials&#47;1.png' /> 
+     <param name='animate_transition' value='yes' /><param name='display_static_image' value='yes' />
+     <param name='display_spinner' value='yes' /><param name='display_overlay' value='yes' />
+     <param name='display_count' value='yes' /><param name='language' value='en-US' />
+     </object>
+    </div>
+
+     <script type='text/javascript'>
+     var divElement = document.getElementById('viz1676424007083');
+     var vizElement = divElement.getElementsByTagName('object')[0];
+     vizElement.style.width='100%';vizElement.style.maxWidth='1880px';vizElement.style.height=(divElement.offsetWidth*0.75)+'px';
+     vizElement.style.maxHeight='827px';
+     var scriptElement = document.createElement('script');
+     scriptElement.src = 'https://public.tableau.com/javascripts/api/viz_v1.js';
+     vizElement.parentNode.insertBefore(scriptElement, vizElement);
+     </script>
+</div> -->
+
+    <!-- --------------------------- Dashboards Section ------------------------- -->
+<!-- Cover -->
+<div class="container-fluid padding dashboard">
+    <tableau-viz id="tableauViz"       
+    src= https://public.tableau.com/views/BaliProjectDashboard1_2/Deckblatt?:language=en-US&publish=yes&:display_count=n&:origin=viz_share_link    
+    toolbar='bottom'
+    device="desktop"
+    >
+    </tableau-viz>
+</div>
+
+
+    
+    <!-- ---------------------- Footer ------------------------>
+    <footer>
+        <div class="container-fluid padding footer">
+            <div class="row text-center">
+                <div class="col-md-12">
+                    <div class="logo">
+                            <img src="img/019-van.png" alt="" height="50px" >
+                    </div>
+                    <hr class="light">
+                    <p> Agus & Sven </p>
+                    <p> Bali</p>
+                </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+
+  </body>
+</html>

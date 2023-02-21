@@ -150,6 +150,18 @@ navbar {
   max-width: 40rem;
 }
 
+
+/* Dashboards */
+
+.dashboard {
+  max-width: 1200px;
+  max-height: 900px;
+}
+
+/* #tableauViz {
+  size-adjust: auto;
+} */
+
 /* Sign In Form 
 -------------------------------------------------- */
 
