@@ -2,6 +2,18 @@
 
 /*---Sass Settings --*/
 
+/* Test hover img and enlarge */
+/* img {
+  transition:transform 0.25s ease;
+}
+
+img:hover {
+  -webkit-transform:scale(2);
+  transform:scale(2);
+} */
+
+
+
 /* GLOBAL STYLES
 -------------------------------------------------- */
 body {
