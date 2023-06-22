@@ -29,7 +29,39 @@
     $(document).ready(function(){$("img").click(function(){this.requestFullscreen()})});
 
     </script>
-
+      .carousel {
+        display: flex;
+        overflow: hidden;
+        width: 500px; /* Adjust the width as needed */
+        margin: 0 auto; /* Centers the carousel */
+      }
+  
+      .carousel img {
+        width: 100%;
+        transition: transform 0.5s ease-in-out;
+      }
+  
+      /* Adjust the button styles as needed */
+      .carousel .prev,
+      .carousel .next {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 50px;
+        height: 50px;
+        background-color: #f1f1f1;
+        color: #333;
+        font-size: 24px;
+        cursor: pointer;
+        opacity: 0.5;
+        transition: opacity 0.3s ease-in-out;
+      }
+  
+      .carousel .prev:hover,
+      .carousel .next:hover {
+        opacity: 1;
+      }
+    </style> -->
 
   </head>
 
@@ -72,6 +104,7 @@
 
     <main role="main">
 
+<!-- For Progress Blog -->
       <section class="jumbotron text-center">
         <div class="container">
           <h1 class="jumbotron-heading"> Fresh Updates from the Island</h1>
@@ -109,8 +142,6 @@
     </div>
   </div>
 </div>
-
-
 <!--1.st Floor  -->
 <div class="col-md-4">
   <div class="card mb-4 shadow-sm">
@@ -134,7 +165,7 @@
 <!--Summer vaccay 09.06 -->
 <div class="col-md-4">
   <div class="card mb-4 shadow-sm">
-      <img class="card-img-top" src="img/progress/09.06.png" alt="Card image cap">
+      <img class="card-img-top" src="img/progress/09.06.jpg" alt="Card image cap">
     <div class="card-body">
       <p class="card-text"> Summer Vaccay is almost over
         </p>
@@ -153,7 +184,6 @@
     </div>
   </div>
 </div>
-
       <!--Lebaran 21.04 -->
 <div class="col-md-4">
   <div class="card mb-4 shadow-sm">
@@ -198,7 +228,6 @@
     </div>
   </div>
 </div>
-
       <!--Wood Frames 04.04 -->
       <div class="col-md-4">
         <div class="card mb-4 shadow-sm">
@@ -877,8 +906,6 @@
         </div>
     </div>
 </footer>
-
-
     <!-- Bootstrap core JavaScript
     ================================================== -->
     <!-- Placed at the end of the document so the pages load faster -->
@@ -887,5 +914,7 @@
     <script src="../../assets/js/vendor/popper.min.js"></script>
     <script src="../../dist/js/bootstrap.min.js"></script>
     <script src="../../assets/js/vendor/holder.min.js"></script>
+
+
   </body>
 </html>
